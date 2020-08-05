@@ -1,12 +1,20 @@
 function mostrar()
 {
-	var contador;
+	var i;
+	var suma;
 	var acumulador;
 	var numeroIngresado;
+	numeroIngresado = parseInt(numeroIngresado);
 
-	contador=0;
+	numeroIngresado = prompt("Ingrese un número");
+
+	i=0;
 	acumulador=0;
-	
+
+	while (i<5);
+	{
+		acumulador = numeroIngresado + acumulador
+	}
 	
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/5;

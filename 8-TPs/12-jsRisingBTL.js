@@ -10,10 +10,57 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 function ComenzarIngreso () 
 {
  	//definicion de variables
- 	var edadIngresada;
- 	var sexoIngresado;
- 	var estadoCivilIngresado;
+	
+	var edadIngresada; 
+	edadIngresada = prompt("Ingrese su edad(18-90 años.");
 
+	while (edadIngresada<18 || edadIngresada >90)
+	{
+		edadIngresada = prompt("Error! Reingrese su edad.");
+	}
+	txtIdEdad.value = edadIngresada;
+
+	var sexoIngresado;
+	sexoIngresado = prompt ("Ingrese 'M' para masculino y 'F' para femenino");
+
+	while (sexoIngresado!="F" &&	sexoIngresado!="M")
+	{
+		sexoIngresado = prompt("Error! Reingrese su sexo");
+	}
+	txtIdSexo.value = sexoIngresado;
+
+	var estadoCivilIngresado;
+	estadoCivilIngresado = prompt("Ingrese su estado civil: 1-para soltero, 2-para casados, 3-para divorciados, 4-para viudos");
+	
+	while (estadoCivilIngresado<1 || estadoCivilIngresado>4)
+	{
+		estadoCivilIngresado = prompt("Error! Reingrese su estado civil");
+	}
+txtIdEstadoCivil.value = estadoCivilIngresado;
+
+	var sueldoBruto;
+	sueldoBruto = prompt ("Ingrese su sueldo bruto, no menor a 8000");
+
+	while (sueldoBruto <8000)
+	{
+		sueldoBruto = prompt("Error! Reingrese su sueldo");
+	}
+	txtIdSueldo.value = sueldoBruto;
+
+
+	var numeroDeLegajo;
+	numeroDeLegajo = parseInt(numeroDeLegajo);
+
+	numeroDeLegajo = prompt ("Ingrese el número de legajo.");
+	
+
+	while (numeroDeLegajo<1000 || numeroDeLegajo>9999)
+	{
+		numeroDeLegajo = prompt("Error! Numero de legajo incorrecto.");
+	}
+	txtIdLegajo.value = numeroDeLegajo;
+
+	var Nacionalidad;
 
 
 }
